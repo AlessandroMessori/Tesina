@@ -1,0 +1,21 @@
+.introduction-section {
+  padding: 1%;
+  text-align: justify;
+
+  .row {
+    margin-top: 1%;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  img {
+    min-width: 100%;
+  }
+
+  @media (max-width: 767px) {
+    padding: 5%;
+  }
+
+}

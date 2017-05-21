@@ -2,7 +2,7 @@ import React from 'react'
 import {Navbar, NavItem, Nav} from 'react-bootstrap'
 import './index.scss'
 
-const NavBar = (props) => (  <Navbar className='navbar-section' inverse collapseOnSelect>
+const NavBar = (props) => (  <Navbar className='navbar-section' inverse collapseOnSelect fixedTop>
   <Navbar.Header>
     <Navbar.Brand className='navbar-logo'>
       <a href="#">Distopia E Tecnologia</a>
