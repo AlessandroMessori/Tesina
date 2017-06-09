@@ -2,13 +2,17 @@
   margin-bottom: 0 !important;
   border-radius: 0 !important;
   min-height: 60px !important;
-  font-size: 14px !important;
   padding-top: 5px !important;
-  background-color: transparent !important;
-  border-color: transparent !important;
+  font-size: 150%!important;
 
   .navbar-links li a, .navbar-logo {
     color: white !important;
     text-transform: uppercase;
+  }
+
+  @media (min-width: 1025px) {
+    font-size: 170% !important;
+    background-color: transparent !important;
+    border-color: transparent !important;
   }
 }
