@@ -1,8 +1,19 @@
 @import "bootstrap-3.3.7-dist 3/css/bootstrap.min.css";
 
+@font-face {
+  font-family: Oswald;
+  src: url('../fonts/Oswald-Regular.ttf');
+}
+
+@font-face {
+  font-family: Mogra;
+  src: url('../fonts/Mogra-Regular.ttf');
+}
+
 body {
   text-align: center;
   overflow: hidden;
   background-color: #54555A;
   color: white;
+  font-family: Mogra;
 }

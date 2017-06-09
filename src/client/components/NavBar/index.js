@@ -2,10 +2,10 @@ import React from 'react'
 import {Navbar, NavItem, Nav} from 'react-bootstrap'
 import './index.scss'
 
-const NavBar = (props) => (  <Navbar className='navbar-section' inverse collapseOnSelect fixedTop>
+const NavBar = (props) => (  <Navbar className='navbar-section' inverse fluid collapseOnSelect fixedTop>
   <Navbar.Header>
     <Navbar.Brand className='navbar-logo'>
-      <a href="#">Distopia E Tecnologia</a>
+      <a href="#"><p>Tesina</p></a>
     </Navbar.Brand>
     <Navbar.Toggle/>
   </Navbar.Header>
