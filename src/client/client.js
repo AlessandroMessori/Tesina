@@ -6,9 +6,28 @@ import createHistory from 'history/createBrowserHistory'
 import Routes from './components/Routes'
 import './assets/styles/index.scss'
 
-ReactDOM.render(
-  <Router history={createHistory()}>
-    <Routes/>
-  </Router>,
-  document.getElementById('root'))
+class App extends React.Component {
+
+  constructor() {
+    super()
+    this.state = {
+      loaded: false
+    }
+
+    window.setTimeout(() => this.setState({loaded: true}), 3000)
+  }
+
+  render() {
+    return (
+      <Router history={createHistory()}>
+        <Routes loaded={this.state.loaded}/>
+      </Router>
+    )
+  }
+
+
+}
+
+
+ReactDOM.render(<App/>, document.getElementById('root'))
 
