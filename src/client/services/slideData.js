@@ -1,4 +1,4 @@
-import background from '../assets/images/black-mirror.png'
+import background from '../assets/images/wallpaper.jpg'
 import matrix from '../assets/images/matrix.jpeg'
 import orwell from '../assets/images/1984.png'
 import fahrenheit from '../assets/images/fahrenheit.png'

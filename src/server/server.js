@@ -14,8 +14,8 @@ const renderPage = (content) => (`
       <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="shortcut icon" href="favicon.ico">
-        <title>F3 Nova</title>
+        <link rel="shortcut icon" href="images/icon.png">
+        <title>Distopia e Tecnologia</title>
         <link rel="stylesheet" href="/${manifest["main.css"]}" />
       </head>
       <body>

@@ -7,7 +7,7 @@ const style = (background) => ({
 })
 
 const Hero = (props) => (<Jumbotron style={style(props.background)} className='hero-section'>
-  {props.children}
+  <section className="container">{props.children}</section>
 </Jumbotron>)
 
 export default Hero

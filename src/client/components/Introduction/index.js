@@ -4,7 +4,7 @@ import img from '../../assets/images/black-mirror.png'
 import img2 from '../../assets/images/matrix.jpeg'
 import './index.scss'
 
-const Introduction = (props) => (<section className='introduction-section'>
+const Introduction = (props) => (<section id='intro' className='introduction-section'>
   <PageHeader>La Tecnologia e le Distopie </PageHeader>
   <Row>
     <Col md={7}>
@@ -26,7 +26,7 @@ const Introduction = (props) => (<section className='introduction-section'>
         successivi a una discontinuità storica, come nelle opere fantascientifiche di H. G. Wells.</p>
     </Col>
     <Col md={5}>
-      <img src={img} className="img-responsive"/>
+      <img role="presentation" src={img} className="img-responsive"/>
     </Col>
   </Row>
   <Row>
@@ -49,7 +49,7 @@ const Introduction = (props) => (<section className='introduction-section'>
         successivi a una discontinuità storica, come nelle opere fantascientifiche di H. G. Wells.</p>
     </Col>
     <Col xs={12} md={5} mdPull={7}>
-      <img src={img2} className="img-responsive"/>
+      <img role="presentation" src={img2} className="img-responsive"/>
     </Col>
   </Row>
 </section>)

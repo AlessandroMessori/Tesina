@@ -1,14 +1,26 @@
 import React from 'react'
 import NavBar from '../NavBar'
-import SlideShow from '../SlideShow'
+import Hero from '../Hero'
+import Hive from '../Hive'
 import Introduction from '../Introduction'
-import slideData from '../../services/slideData'
+import background from '../../assets/images/wallpaper.jpg'
 
-const Home = () => (
+
+const Home = (props) => (
   <section>
-    <NavBar/>
-    <SlideShow data={slideData}/>
-    <Introduction/>
+
+    {!props.loaded && <Hive/>}
+
+    {props.loaded &&
+    <section>
+      <NavBar/>
+      <Hero background={background}>
+        <h1>le distopie e il progresso</h1>
+        <h2>Il Progresso è pericoloso?</h2>
+      </Hero>
+      <Introduction/>
+    </section>
+    }
   </section>
 )
 

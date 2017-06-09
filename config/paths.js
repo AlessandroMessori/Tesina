@@ -32,7 +32,7 @@ var nodePaths = (process.env.NODE_PATH || '')
 // config after eject: we're in ./config/
 module.exports = {
   appBuild: resolveApp('build/app'),
-  appPublic: resolveApp('src/assets'),
+  appPublic: resolveApp('src/client/assets'),
   appHtml: resolveApp('config/template/index.html'),
   appIndexJs: resolveApp('src/client/client.js'),
   appServerJs: resolveApp('src/server/server.js'),
