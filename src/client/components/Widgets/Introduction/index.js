@@ -1,7 +1,7 @@
 import React from 'react'
 import {Row, Col, PageHeader} from 'react-bootstrap'
-import img from '../../assets/images/black-mirror.png'
-import img2 from '../../assets/images/matrix.jpeg'
+import img from '../../../assets/images/black-mirror.png'
+import img2 from '../../../assets/images/matrix.jpeg'
 import './index.scss'
 
 const Introduction = (props) => (<section id='intro' className='introduction-section'>

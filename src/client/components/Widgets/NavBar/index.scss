@@ -5,20 +5,22 @@
   padding-top: 5px !important;
   font-size: 150% !important;
 
-  .navbar-logo p {
-    font-size: 150% !important;
+  .navbar-logo {
+    margin-top: 5px;
+    font-size: 120% !important;
+    text-decoration: none;
   }
 
   .navbar-links li a, .navbar-logo {
     color: white !important;
     text-transform: uppercase;
+    text-decoration: none;
   }
 
   @media (min-width: 1025px) {
-    font-size: 170% !important;
+    font-size: 150% !important;
     background-color: transparent !important;
     border-color: transparent !important;
-
-
   }
+
 }

@@ -1,7 +1,7 @@
 $mainColor: gray 50%;
 
 .startBtn {
-  top: 70px;
+  top: 10%;
   margin-left: 50%;
   transform: translateX(-50%);
 }
@@ -65,7 +65,7 @@ a.animated-button:link, a.animated-button:visited {
 a.animated-button.gibson-three {
   border: 2px solid ghostwhite;
   color: #FFF;
-  font-size: 3px;
+  font-size: 30px;
 }
 
 a.animated-button.gibson-three:after {

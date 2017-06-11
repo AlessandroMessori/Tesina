@@ -1,7 +1,7 @@
 import React from 'react'
 import {renderToString} from 'react-dom/server'
 import {StaticRouter} from 'react-router'
-import Routes from '../client/components/Routes'
+import Routes from '../client/components/Pages/Routes'
 import express from 'express'
 import path from 'path'
 const port = process.argv[2] || 3000
