@@ -1,3 +1,22 @@
 .origin-section {
   margin-top: 52px;
+
+  .jumbotron  {
+    height: 100vh;
+    background-color: transparent;
+    text-align: justify;
+  }
+
+  h1 {
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  h3 {
+    float: right;
+  }
+
+  #scrollBtn1 {
+    margin-top: 30%;
+  }
 }
