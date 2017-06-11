@@ -11,7 +11,10 @@ const elem = (loaded, component) => () => <Transition loaded={loaded} component=
 
 const Routes = ({history, loaded, onChange}) => {
 
-  history.listen(() => {
+  history.listen((location) => {
+    if (location.pathname === '/') document.body.style.overflowY = 'hidden'
+    else window.setTimeout(() => document.body.style.overflowY = 'scroll', 2000)
+
     if (!loaded) onChange()
   })
 
