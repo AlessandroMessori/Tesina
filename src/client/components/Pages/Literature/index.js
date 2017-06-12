@@ -24,7 +24,7 @@ const Origin = (props) => (<div className='literature-section container-fluid'>
     <PageHeader>Il Mondo Nuovo - Aldous Huxley</PageHeader>
     <h2>“If one's different, one's bound to be lonely.”</h2>
     <img className="col-md-6" src="images/new-world.jpeg" role='presentation'/>
-    <img className="col-md-6" src="images/cinema.jpeg" role='presentation'/>
+    <img className="col-md-6" src="images/babies.jpeg" role='presentation'/>
   </Jumbotron>
 </div>)
 
