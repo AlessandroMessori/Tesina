@@ -1,10 +1,13 @@
 .origin-section {
-  margin-top: 52px;
 
   .jumbotron  {
     height: 100vh;
     background-color: transparent;
     text-align: justify;
+  }
+
+  #quote {
+    font-size: 50px !important;
   }
 
   h1 {
@@ -17,15 +20,15 @@
   }
 
   #scrollBtn1 {
-    margin-top: 40vh;
+    margin-top: 10vh;
   }
 
   #scrollBtn2, #scrollBtn3 {
-    margin-top: 5vh;
+    margin-top: 1vh;
   }
 
   #moore img, #distopia img {
-    min-height: 400px;
-    max-height: 400px;
+    min-height: 350px;
+    max-height: 350px;
   }
 }

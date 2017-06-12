@@ -22,7 +22,7 @@ const NavBar = (props) => {
             <Link to='/origine'>Origine</Link>
           </NavItem>
           <NavItem eventKey={2}>
-            <Link to='/origine'>Letteratura</Link>
+            <Link to='/letteratura'>Letteratura</Link>
           </NavItem>
           <NavItem eventKey={3}>
             <Link to='/origine'>Cinema</Link>

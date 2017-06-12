@@ -1,0 +1,36 @@
+.literature-section {
+  .jumbotron  {
+    height: 100vh;
+    background-color: transparent;
+    text-align: justify;
+  }
+
+  h1 {
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  h2  {
+    text-align: center;
+  }
+
+  h3 {
+    float: right;
+  }
+
+  #scrollBtn1, #scrollBtn2, #scrollBtn3 {
+    margin-top: 3vh;
+  }
+
+  .content-wrapper img {
+    min-height: 350px;
+    max-height: 350px;
+  }
+
+  h2  {
+    //transition: transform .65s cubic-bezier(.694, .048, .335, 1), -webkit-transform .65s cubic-bezier(.694, .048, .335, 1);
+    transition: all .2s ease!important;
+  }
+
+}
+
