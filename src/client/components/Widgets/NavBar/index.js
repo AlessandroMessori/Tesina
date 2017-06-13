@@ -7,8 +7,6 @@ const NavBar = (props) => {
 
   const className = props.black ? 'black' : ''
 
-  console.log(className)
-
   return (
     <Navbar className='navbar-section' id={className} inverse fluid collapseOnSelect
             fixedTop>
