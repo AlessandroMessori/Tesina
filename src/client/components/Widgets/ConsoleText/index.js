@@ -1,5 +1,6 @@
 /* eslint-disable */
 import React from 'react'
+import $ from 'jquery'
 import './index.scss'
 
 class ConsoleText extends React.Component {
@@ -11,9 +12,14 @@ class ConsoleText extends React.Component {
       text: props.children
     }
 
+    this.componentDidMount = this.componentDidMount.bind(this)
   }
 
   componentDidMount() {
+
+    const id = `#${this.props.id}`
+    const title = this.state.text
+    let check = true
 
     function getRandomInteger(min, max) {
       return Math.floor(Math.random() * (max - min + 1)) + min
@@ -77,32 +83,70 @@ class ConsoleText extends React.Component {
       }
     }
 
+    let hT = $(id).offset().top
+    if (hT < 100) {
+      check = false
+      const string = Array.from(title)
+      string.forEach((char, i) => {
 
-    const string = Array.from(this.state.text)
-    string.forEach((char, i) => {
+        const options = {
+          counter: i,
+          // Initial position
+          offset: 0,
+          // Timeout between each random character
+          timeout: 10,
+          // Number of random characters to show
+          iterations: getRandomInteger(30, 70),
+          // Random characters to pick from
+          characters: ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'x', 'y', 'x', '#', '%', '&', '-', '+', '_', '?', '/', '\\', '='
+            , 'ض', 'ل'],
+          // String to resolve
+          resolveString: char,
+          // The element
+          element: document.querySelector(id)
+        }
 
-      const options = {
-        counter: i,
-        // Initial position
-        offset: 0,
-        // Timeout between each random character
-        timeout: 10,
-        // Number of random characters to show
-        iterations: getRandomInteger(50, 100),
-        // Random characters to pick from
-        characters: ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'x', 'y', 'x', '#', '%', '&', '-', '+', '_', '?', '/', '\\', '='
-          , 'ض', 'ل'],
-        // String to resolve
-        resolveString: char,
-        // The element
-        element: document.querySelector('#' + this.props.id)
+        resolver.resolve(options)
+
+      })
+    }
+
+    $(window).scroll(function () {
+      let hT = $(id).offset().top,
+        hH = $(id).outerHeight(),
+        wH = $(window).height(),
+        wS = $(this).scrollTop();
+
+      console.log(hT)
+
+      if (((wS > (hT + hH - wH)) || (hT < 100)) && check) {
+        check = false
+        const string = Array.from(title)
+        string.forEach((char, i) => {
+
+          const options = {
+            counter: i,
+            // Initial position
+            offset: 0,
+            // Timeout between each random character
+            timeout: 10,
+            // Number of random characters to show
+            iterations: getRandomInteger(30, 70),
+            // Random characters to pick from
+            characters: ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'x', 'y', 'x', '#', '%', '&', '-', '+', '_', '?', '/', '\\', '='
+              , 'ض', 'ل'],
+            // String to resolve
+            resolveString: char,
+            // The element
+            element: document.querySelector(id)
+          }
+
+          resolver.resolve(options)
+
+        })
+
       }
-
-      resolver.resolve(options)
-    })
-
-    //document.querySelector('#' + this.props.id).textContent = string.join('')
-
+    });
   }
 
   render() {
