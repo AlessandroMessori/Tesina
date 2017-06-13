@@ -25,7 +25,7 @@ const NavBar = (props) => {
             <Link to='/letteratura'>Letteratura</Link>
           </NavItem>
           <NavItem eventKey={3}>
-            <Link to='/origine'>Cinema</Link>
+            <Link to='/cinema'>Cinema</Link>
           </NavItem>
           <NavItem eventKey={4}>
             <Link to='/origine'>Black Mirror</Link>

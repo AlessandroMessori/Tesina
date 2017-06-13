@@ -1,5 +1,5 @@
 import React from 'react'
-import {Jumbotron, PageHeader} from 'react-bootstrap'
+import {Jumbotron} from 'react-bootstrap'
 import NavBar from '../../Widgets/NavBar'
 import ConsoleText from '../../Widgets/ConsoleText'
 import ScrollBtn from '../../Widgets/ScrollBtn'
@@ -9,6 +9,7 @@ const Origin = (props) => (<div className='origin-section container-fluid'>
   <NavBar black/>
   <Jumbotron>
     <ConsoleText id="text1">utopia</ConsoleText>
+    <hr/>
     <h2 id="quote"> Una mappa del mondo che non include Utopia non è degna nemmeno di uno sguardo, perché non contempla
       il solo paese al quale l’umanità approda di continuo. E quando vi approda, l’umanità si guarda intorno, vede un
       paese migliore e issa nuovamente le vele.</h2>

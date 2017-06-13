@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React from 'react'
 import './index.scss'
 
@@ -87,9 +88,9 @@ class ConsoleText extends React.Component {
       // Initial position
       offset: 0,
       // Timeout between each random character
-      timeout: 5,
+      timeout: 10,
       // Number of random characters to show
-      iterations: 10,
+      iterations: 30,
       // Random characters to pick from
       characters: ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'x', 'y', 'x', '#', '%', '&', '-', '+', '_', '?', '/', '\\', '='],
       // String to resolve
