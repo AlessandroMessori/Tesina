@@ -26,7 +26,7 @@ const NavBar = (props) => {
             <Link to='/cinema'>Cinema</Link>
           </NavItem>
           <NavItem eventKey={4}>
-            <Link to='/origine'>Black Mirror</Link>
+            <Link to='/blackMirror'>Black Mirror</Link>
           </NavItem>
         </Nav>
       </Navbar.Collapse>

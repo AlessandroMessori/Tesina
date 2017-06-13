@@ -1,0 +1,48 @@
+.blackMirror-section {
+
+  animation: fadein 3s;
+
+  .jumbotron  {
+    height: 100vh;
+    background-color: transparent;
+    text-align: justify;
+  }
+
+  h1 {
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  h2  {
+    text-align: center;
+  }
+
+  h3 {
+    float: right;
+  }
+
+  #scrollBtn1, #scrollBtn2, #scrollBtn3 {
+    margin-top: 3vh;
+  }
+
+  .content-wrapper img {
+    min-height: 45vh;
+    max-height: 45vh;
+  }
+
+  h2  {
+    //transition: transform .65s cubic-bezier(.694, .048, .335, 1), -webkit-transform .65s cubic-bezier(.694, .048, .335, 1);
+    transition: all .2s ease!important;
+  }
+
+  @keyframes fadein {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+}
+
