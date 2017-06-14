@@ -21,8 +21,14 @@
     float: right;
   }
 
-  #scrollBtn1, #scrollBtn2, #scrollBtn3 {
-    margin-top: 3vh;
+  #scrollBtn1 {
+    position: absolute;
+    top: 80%;
+  }
+
+  #scrollBtn2, {
+    position: absolute;
+    top: 180%;
   }
 
   .content-wrapper img {
@@ -32,7 +38,7 @@
 
   h2  {
     //transition: transform .65s cubic-bezier(.694, .048, .335, 1), -webkit-transform .65s cubic-bezier(.694, .048, .335, 1);
-    transition: all .2s ease!important;
+    transition: all .2s ease !important;
   }
 
   @keyframes fadein {

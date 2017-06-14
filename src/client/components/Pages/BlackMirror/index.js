@@ -2,6 +2,7 @@ import React from 'react'
 import {Jumbotron} from 'react-bootstrap'
 import ConsoleText from '../../Widgets/ConsoleText'
 import NavBar from '../../Widgets/NavBar'
+import Video from '../../Widgets/Video'
 import HeroVideo from '../../Widgets/HeroVideo'
 import ScrollBtn from '../../Widgets/ScrollBtn'
 import './index.scss'
@@ -30,25 +31,21 @@ class BlackMirror extends React.Component {
     return (<div className='blackMirror-section container-fluid'>
       <NavBar black/>
       <Jumbotron id="1984" className="content-wrapper">
-        <ConsoleText id="title10">Black Mirror</ConsoleText>
+        <ConsoleText id="titledsas10">Gioci Pericolosi</ConsoleText>
         <hr/>
-        <h2>“War is peace. Freedom is slavery. Ignorance is strength.”</h2>
-        <img className="col-md-6" src="images/big-brother.png" role='presentation'/>
-        <img className="col-md-6" src="images/1984.jpeg" role='presentation'/>
-        <ScrollBtn id='scrollBtn1' target='#fahrenheit'/>
+        <Video src="images/Black-Mirror-Intro.mp4"/>
+        <ScrollBtn id='scrollBtn1' target='#white'/>
       </Jumbotron>
-      <Jumbotron id='fahrenheit' className='content-wrapper container-fluid'>
-        <ConsoleText id="title1ds0">Fahrenheit 451</ConsoleText>
-        <h2>“If you hide your ignorance, no one will hit you and you'll never learn.”</h2>
-        <img className="col-md-6" src="images/fireman.jpeg" role='presentation'/>
-        <img className="col-md-6" src="images/library.jpeg" role='presentation'/>
-        <ScrollBtn id='scrollBtn3' target='#new-world'/>
+      <Jumbotron id='white' className='content-wrapper container-fluid'>
+        <ConsoleText id="titlasdsadse1ds0">Bianco Natale</ConsoleText>
+        <hr/>
+        <Video src="images/Black-Mirror-Intro.mp4"/>
+        <ScrollBtn id='scrollBtn2' target='#falling'/>
       </Jumbotron>
-      <Jumbotron id='new-world' className='content-wrapper container-fluid'>
-        <ConsoleText id="titldfe10">Il Mondo Nuovo</ConsoleText>
-        <h2>“If one's different, one's bound to be lonely.”</h2>
-        <img className="col-md-6" src="images/new-world.jpeg" role='presentation'/>
-        <img className="col-md-6" src="images/babies.jpeg" role='presentation'/>
+      <Jumbotron id='falling' className='content-wrapper container-fluid'>
+        <ConsoleText id="titlasdsdsadfe10">Caduta Libera</ConsoleText>
+        <hr/>
+        <Video src="images/Black-Mirror-Intro.mp4"/>
       </Jumbotron>
     </div>)
   }

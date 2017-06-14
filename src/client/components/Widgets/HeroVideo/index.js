@@ -32,7 +32,7 @@ class HeroVideo extends React.Component {
 
   render() {
     return (<section>
-      <video id="bgvid" playsInline autoPlay>
+      <video id="bgvid" className="hero-video" playsInline autoPlay>
         <source src="images/Black-Mirror-Intro.mp4" type="video/mp4"/>
       </video>
     </section>)
