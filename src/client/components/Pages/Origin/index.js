@@ -18,19 +18,14 @@ const Origin = (props) => (<div className='origin-section container-fluid'>
   </Jumbotron>
   <Jumbotron id='moore' className='container-fluid'>
     <ConsoleText id="text2">Origine Del Termine</ConsoleText>
-    <h2>L'Utopìa è un romanzo di Tommaso Moro pubblicato nel 1516, in cui è descritto il viaggio immaginario di Raffaele
-      Itlodeo in una fittizia isola-regno, abitata da una società ideale.</h2>
+    <hr/>
     <img className="col-md-6" src="images/moore.jpeg" role='presentation'/>
     <img className="col-md-6" src="images/utopia.jpeg" role='presentation'/>
     <ScrollBtn id='scrollBtn3' target='#distopia'/>
   </Jumbotron>
   <Jumbotron id='distopia' className='container-fluid'>
-    <ConsoleText id="text3">La Nascita della Distopia</ConsoleText>
-    <h2>Per distopia s'intende la descrizione di una immaginaria società o comunità altamente indesiderabile o
-      spaventosa. Il termine è stato coniato come contrario di utopia ed è soprattutto utilizzato in riferimento alla
-      rappresentazione di una società fittizia (spesso ambientata nel futuro) nella quale alcune tendenze sociali,
-      politiche e tecnologiche avvertite nel presente sono portate a estremi negativi
-    </h2>
+    <ConsoleText id="text3">La Distopia</ConsoleText>
+    <hr/>
     <img className="col-md-6" src="images/good-city.jpg" role='presentation'/>
     <img className="col-md-6" src="images/distopia.jpg" role='presentation'/>
   </Jumbotron>

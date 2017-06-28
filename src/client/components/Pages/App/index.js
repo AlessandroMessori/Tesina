@@ -19,6 +19,11 @@ class App extends React.Component {
   }
 
   componentDidMount() {
+    document.body.addEventListener('contextmenu', (ev) => {
+      ev.preventDefault();
+      alert('success!');
+      return false;
+    }, false);
     this.updateState()
   }
 
