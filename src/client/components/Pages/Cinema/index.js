@@ -5,7 +5,7 @@ import ConsoleText from '../../Widgets/ConsoleText'
 import ScrollBtn from '../../Widgets/ScrollBtn'
 import './index.scss'
 
-const Cinema = (props) => (<div className='origin-section container-fluid'>
+const Cinema = (props) => (<div className='cinema-section container-fluid'>
   <NavBar black/>
   <Jumbotron className="content-wrapper">
     <ConsoleText id="text1">The Terminator</ConsoleText>
@@ -19,7 +19,7 @@ const Cinema = (props) => (<div className='origin-section container-fluid'>
     <hr/>
     <img className="col-md-6" src="images/numbers.jpeg" role='presentation'/>
     <img className="col-md-6" src="images/matrix.jpeg" role='presentation'/>
-    <ScrollBtn id='scrollBtn3' target='#inTime'/>
+    <ScrollBtn id='scrollBtn2' target='#inTime'/>
   </Jumbotron>
   <Jumbotron id='inTime' className='container-fluid content-wrapper'>
     <ConsoleText id="text3">In Time</ConsoleText>
