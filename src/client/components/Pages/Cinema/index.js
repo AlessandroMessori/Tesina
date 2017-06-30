@@ -17,7 +17,7 @@ const Cinema = (props) => (<div className='cinema-section container-fluid'>
   <Jumbotron id='matrix' className='container-fluid content-wrapper'>
     <ConsoleText id="text2">Nerve</ConsoleText>
     <hr/>
-    <img className="col-md-6" src="images/nerve.jpeg" role='presentation'/>
+    <img className="col-md-6" src="images/bike.jpg" role='presentation'/>
     <img className="col-md-6" src="images/dare.jpg" role='presentation'/>
   </Jumbotron>
 </div>)

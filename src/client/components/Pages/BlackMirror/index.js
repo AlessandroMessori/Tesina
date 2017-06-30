@@ -33,7 +33,7 @@ class BlackMirror extends React.Component {
       <Jumbotron id="1984" className="content-wrapper">
         <ConsoleText id="titledsas10">Gioci Pericolosi</ConsoleText>
         <hr/>
-        <Video src="images/Black-Mirror-Intro.mp4"/>
+        <Video type="mp4" src="images/bm1.mp4"/>
         <ScrollBtn id='scrollBtn1' target='#white'/>
       </Jumbotron>
       <Jumbotron id='white' className='content-wrapper container-fluid'>
@@ -45,7 +45,7 @@ class BlackMirror extends React.Component {
       <Jumbotron id='falling' className='content-wrapper container-fluid'>
         <ConsoleText id="titlasdsdsadfe10">Caduta Libera</ConsoleText>
         <hr/>
-        <Video src="images/Black-Mirror-Intro.mp4"/>
+        <Video src="images/bm2.mp4"/>
       </Jumbotron>
     </div>)
   }
