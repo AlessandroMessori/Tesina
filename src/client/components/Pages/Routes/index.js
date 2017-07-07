@@ -7,7 +7,6 @@ import Home from '../Home/'
 import Origin from '../Origin'
 import Literature from '../Literature'
 import Cinema from '../Cinema'
-import BlackMirror from '../BlackMirror'
 import NotFound from '../NotFound/'
 
 const elem = (loaded, component) => () => <Transition loaded={loaded} component={component}/>
@@ -21,10 +20,9 @@ const Routes = ({history, loaded, onChange}) => {
   return (<div>
     {<Switch>
       <Route component={elem(loaded, <Home/>)} exact path={'/'}/>
-      <Route component={elem(loaded, <Origin/>)} exact path={'/origine'}/>
-      <Route component={elem(loaded, <Literature/>)} exact path={'/letteratura'}/>
-      <Route component={elem(loaded, <Cinema/>)} exact path={'/cinema'}/>
-      <Route component={elem(loaded, <BlackMirror/>)} exact path={'/blackMirror'}/>
+      <Route component={elem(loaded, <Origin/>)} exact path={'/utopia'}/>
+      <Route component={elem(loaded, <Literature/>)} exact path={'/distopia'}/>
+      <Route component={elem(loaded, <Cinema/>)} exact path={'/progresso'}/>
       <Route component={NotFound}/>
     </Switch>
     }

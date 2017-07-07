@@ -7,18 +7,26 @@ import './index.scss'
 
 const Cinema = (props) => (<div className='cinema-section container-fluid'>
   <NavBar black/>
-  <Jumbotron className="content-wrapper">
-    <ConsoleText id="text3">In Time</ConsoleText>
-    <hr/>
-    <img className="col-md-6" src="images/intime.jpeg" role='presentation'/>
-    <img className="col-md-6" src="images/clock.jpg" role='presentation'/>
-    <ScrollBtn id='scrollBtn1' target='#matrix'/>
-  </Jumbotron>
+
   <Jumbotron id='matrix' className='container-fluid content-wrapper'>
-    <ConsoleText id="text2">Nerve</ConsoleText>
+    <ConsoleText id="text2fpdèof">Nerve</ConsoleText>
     <hr/>
     <img className="col-md-6" src="images/bike.jpg" role='presentation'/>
     <img className="col-md-6" src="images/dare.jpg" role='presentation'/>
+    <ScrollBtn id='scrollBtn1' target='#memories'/>
+  </Jumbotron>
+  <Jumbotron id='memories' className='container-fluid content-wrapper'>
+    <ConsoleText id="text5djldkfjkl">Ricordi Pericolosi</ConsoleText>
+    <hr/>
+    <img className="col-md-6" src="images/memories.png" role='presentation'/>
+    <img className="col-md-6" src="images/grain.jpg" role='presentation'/>
+    <ScrollBtn id='scrollBtn2' target='#fall'/>
+  </Jumbotron>
+  <Jumbotron id='fall' className='container-fluid content-wrapper'>
+    <ConsoleText id="text20dssdsytyr">Caduta Libera</ConsoleText>
+    <hr/>
+    <img className="col-md-6" src="images/score.jpg" role='presentation'/>
+    <img className="col-md-6" src="images/phone.jpg" role='presentation'/>
   </Jumbotron>
 </div>)
 

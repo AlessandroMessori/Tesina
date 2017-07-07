@@ -17,16 +17,13 @@ const NavBar = (props) => {
       <Navbar.Collapse>
         <Nav pullRight className="navbar-links">
           <NavItem eventKey={1}>
-            <Link to='/origine'>Origine</Link>
+            <Link to='/utopia'>Utopia</Link>
           </NavItem>
           <NavItem eventKey={2}>
-            <Link to='/letteratura'>Letteratura</Link>
+            <Link to='/distopia'>Distopia</Link>
           </NavItem>
           <NavItem eventKey={3}>
-            <Link to='/cinema'>Cinema</Link>
-          </NavItem>
-          <NavItem eventKey={4}>
-            <Link to='/blackMirror'>Black Mirror</Link>
+            <Link to='/progresso'>Progresso</Link>
           </NavItem>
         </Nav>
       </Navbar.Collapse>
